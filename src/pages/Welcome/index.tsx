@@ -26,10 +26,10 @@ export const Welcome = () => {
             {step === "Initial" &&
                 <BottomBox>
                     <Title>
-                        Bem vindo ao On<Strong>Vet</Strong>
+                        Bem-vindo ao On<Strong>Vet</Strong>
                     </Title>
                     <SubTitle>
-                        Conectamos veterináros com donos de pets!
+                        Conectamos veterinários com donos de pets!
                     </SubTitle>
                     <List>
                         <Item>
