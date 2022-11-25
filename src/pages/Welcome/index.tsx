@@ -7,7 +7,7 @@ import { PrimaryButton } from "../../components/buttons/PrimaryButton"
 import { Strong } from "../../styles/global"
 import { TopBox, BottomBox, Title, LogoOnVet, Content, SubTitle, List, Item, ItemText, ButtonBox } from "./styles"
 
-export const Welcome = () => {
+export const WelcomePage = () => {
     const navigate = useNavigate();
     const [step, setStep] = useState<"Initial" | "Second">("Initial");
 

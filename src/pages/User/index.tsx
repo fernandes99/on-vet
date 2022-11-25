@@ -1,11 +1,11 @@
-import { Text } from "react-native"
-import { useLocation } from "react-router-native";
+import { Text, View } from "react-native"
 
-export const User = () => {
-    let location = useLocation();
+export const UserPage = () => {
     return (
-        <Text>
-            User List 
-        </Text>
+        <View>
+            <Text>User Page</Text>
+            <Text>User Page</Text>
+            <Text>User Page</Text>
+        </View>
     )
 }

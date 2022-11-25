@@ -1,26 +1,34 @@
 import { NativeRouter, Route, Routes } from "react-router-native";
 import { useSelector } from "react-redux";
-import { Login } from "./pages/Login";
-import { Welcome } from "./pages/Welcome";
+import { LoginPage } from "./pages/Login";
+import { WelcomePage } from "./pages/Welcome";
 import { RootState } from "./store";
-import { Loading } from "./styles/global";
-import { Location } from "./pages/Location";
-import { Home } from "./pages/Home";
+import { AddressPage } from "./pages/Address";
+import { HomePage } from "./pages/Home";
+import { PetsPage } from "./pages/Pets";
+import { BottomNavigation } from "./components/BottomNavigation";
+import { SchedulePage } from "./pages/Schedule";
+import { UserPage } from "./pages/User";
 
 export const Index = () => {
     const global = useSelector((state: RootState) => state.global);
 
     return (
         <NativeRouter>
-            {global.loading &&
-                <Loading />
-            }
             <Routes>
-                <Route path="/" element={<Welcome />} />
-                <Route path="/home" element={<Home />} />
-                <Route path="/login" element={<Login />} />
-                <Route path="/location" element={<Location />} />
+                <Route path="/" element={<HomePage />} />
+                <Route path="/home" element={<HomePage />} />
+                <Route path="/pets" element={<PetsPage />} />
+                <Route path="/schedule" element={<SchedulePage />} />
+                <Route path="/user" element={<UserPage />} />
+                <Route path="/login" element={<LoginPage />} />
+                <Route path="/address" element={<AddressPage />} />
+                <Route path="/welcome" element={<WelcomePage />} />
             </Routes>
+
+            {global.navbar.enabled &&
+                <BottomNavigation />
+            }
         </NativeRouter>
     );
 }
