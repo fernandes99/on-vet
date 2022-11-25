@@ -11,10 +11,13 @@ export const Strong = styled.Text`
 `
 
 export const Loading = styled.View`
-    border-radius: 50%;
+    border-radius: 50px;
     width: 24px;
     height: 24px;
-    border: .25rem solid rgba(white, 0.2);
+    border: 3px solid rgba(white, 0.2);
     border-top-color: white;
-    animation: spin 1s infinite linear;
+`
+
+export const Input = styled.TextInput`
+    
 `

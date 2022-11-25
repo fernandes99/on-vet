@@ -74,7 +74,7 @@ export const Welcome = () => {
                     <ButtonBox>
                         <PrimaryButton
                             text="Certo, vamos lá!"
-                            onPress={() => navigate("/login")}
+                            onPress={() => navigate("/location")}
                         />
                     </ButtonBox>
                 </BottomBox>

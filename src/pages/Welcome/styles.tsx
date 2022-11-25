@@ -1,7 +1,7 @@
 import styled from "styled-components/native";
 
 export const Content = styled.ScrollView`
-    display: flex;
+    
 `
 
 export const LogoOnVet = styled.Image`

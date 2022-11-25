@@ -8,6 +8,10 @@ export const Button = styled.TouchableOpacity`
     height: 58px;
     width: 100%;
     border-radius: 12px;
+
+    &:disabled {
+        background-color: red;
+    }
 `
 
 export const Text = styled.Text`
