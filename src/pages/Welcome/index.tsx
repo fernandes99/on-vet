@@ -74,7 +74,7 @@ export const WelcomePage = () => {
                     <ButtonBox>
                         <PrimaryButton
                             text="Certo, vamos lá!"
-                            onPress={() => navigate("/location")}
+                            onPress={() => navigate("/address")}
                         />
                     </ButtonBox>
                 </BottomBox>

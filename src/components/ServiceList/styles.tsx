@@ -5,10 +5,12 @@ export const List = styled.View`
     flex-direction: row;
     align-self: flex-start;
     width: 100%;
+    flex: 1;
+    padding-right: 24px;
 `
 
 export const Item = styled.View`
-    width: 40%;
+    width: 200px;
     margin-right: 16px;
     align-items: center;
 `

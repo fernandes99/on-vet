@@ -1,5 +1,4 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { UserType } from "./user.type";
 
 const user = createSlice({
     name: 'user',
@@ -11,7 +10,17 @@ const user = createSlice({
             state.user = action.user;
         },
     }
-})
+});
+
+export interface UserType {
+    name: string,
+    address: UserAddressType,
+}
+
+export interface UserAddressType {
+    street: string,
+    number: string,
+}
 
 export const { setUser } = user.actions;
 export default user.reducer;

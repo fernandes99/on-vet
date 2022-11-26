@@ -1,26 +1,31 @@
 import React, { ReactNode } from "react"
 import { TouchableOpacityProps } from "react-native";
+import { TouchableOpacity } from "react-native";
 import { Button, Text } from "./styles"
 
-interface PropsPrimaryButton extends TouchableOpacityProps {
+export interface PropsPrimaryButton extends TouchableOpacityProps {
     text: string,
+    onPress: () => void,
     size?: string,
     color?: string,
     backgroundColor?: string,
     icon?: string,
     disabled?: boolean,
-    children?: ReactNode | string;
+    children?: ReactNode | string,
     outlined?: boolean,
 }
+
 
 export const PrimaryButton = (props: PropsPrimaryButton) => {
     const {...rest} = props;
 
     return (
-        <Button {...rest}>
-            <Text>
-                {props.text}
-            </Text>
-        </Button>
+        <TouchableOpacity onPress={props.onPress}>
+            <Button {...rest}>
+                <Text color={`${props.color ? props.color : '#fff' }`}>
+                    {props.text}
+                </Text>
+            </Button>
+        </TouchableOpacity>
     )
 }

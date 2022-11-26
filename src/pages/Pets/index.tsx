@@ -20,14 +20,14 @@ export const PetsPage = () => {
         <View>
             <TopBar text="Meus pets" />
             <Container>
-                <View style={{ paddingHorizontal: 80 }}>
+                <View>
                     <Text
                         category="h1"
                         color="#5F5F66"
                         align="center"
                         mb="24px"
                     >
-                        Você não possui nenhum pet
+                        Você não possui{"\n"} nenhum pet
                     </Text>
                 </View>
                 <PrimaryButton
