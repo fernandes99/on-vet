@@ -2,8 +2,8 @@ import { useEffect, useState } from "react"
 import { KeyboardAvoidingView, ScrollView, TextInput, TouchableOpacity } from "react-native"
 import { useNavigate } from "react-router-native"
 import { ArrowLeftIcon } from "../../assets/icons/ArrowLeftIcon"
-import { PrimaryButton } from "../../components/buttons/PrimaryButton"
-import { BottomBox, ButtonBox, LogoOnVet, SubTitle, Title, TopBox } from "../Welcome/styles"
+import { PrimaryButton } from "../../components/PrimaryButton"
+import { BottomBox, ButtonBox, LogoOnVet, SubTitle, TopBox } from "../Welcome/styles"
 
 export const AddressPage = () => {
     const navigate = useNavigate();

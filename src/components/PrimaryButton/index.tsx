@@ -10,8 +10,8 @@ interface PropsPrimaryButton extends TouchableOpacityProps {
     icon?: string,
     disabled?: boolean,
     children?: ReactNode | string;
+    outlined?: boolean,
 }
-
 
 export const PrimaryButton = (props: PropsPrimaryButton) => {
     const {...rest} = props;

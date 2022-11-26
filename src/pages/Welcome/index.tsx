@@ -3,7 +3,7 @@ import { Text, TouchableOpacity, View } from "react-native"
 import { useNavigate } from "react-router-native"
 import { ArrowLeftIcon } from "../../assets/icons/ArrowLeftIcon"
 import { CheckIcon } from "../../assets/icons/CheckIcon"
-import { PrimaryButton } from "../../components/buttons/PrimaryButton"
+import { PrimaryButton } from "../../components/PrimaryButton"
 import { Strong } from "../../styles/global"
 import { TopBox, BottomBox, Title, LogoOnVet, Content, SubTitle, List, Item, ItemText, ButtonBox } from "./styles"
 

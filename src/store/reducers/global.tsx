@@ -5,7 +5,7 @@ const global = createSlice({
     initialState: {
         loading: false as boolean,
         navbar: {
-            enabled: true as boolean,
+            enabled: false as boolean,
             actived: "home" as "home" | "pets" | "schedule" | "user",
         },
     },
@@ -14,7 +14,7 @@ const global = createSlice({
             state.loading = action.payload;
         },
         enableNavbar (state, action) {
-            state.navbar.enabled = true;
+            state.navbar.enabled = action.payload;
         },
         setNavbar (state, action) {
             state.navbar.actived = action.payload;

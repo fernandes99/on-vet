@@ -1,5 +1,6 @@
 import styled from 'styled-components/native';
 
+// Design System base concept: https://akveo.github.io/react-native-ui-kitten/docs/components
 export const Container = styled.View`
     width: 100%;
     height: 100%;
@@ -16,8 +17,4 @@ export const Loading = styled.View`
     height: 24px;
     border: 3px solid rgba(white, 0.2);
     border-top-color: white;
-`
-
-export const Input = styled.TextInput`
-    
 `

@@ -9,6 +9,7 @@ import { PetsPage } from "./pages/Pets";
 import { BottomNavigation } from "./components/BottomNavigation";
 import { SchedulePage } from "./pages/Schedule";
 import { UserPage } from "./pages/User";
+import { AddPetPage } from "./pages/AddPet";
 
 export const Index = () => {
     const global = useSelector((state: RootState) => state.global);
@@ -18,6 +19,7 @@ export const Index = () => {
             <Routes>
                 <Route path="/" element={<HomePage />} />
                 <Route path="/home" element={<HomePage />} />
+                <Route path="/pets/add" element={<AddPetPage />} />
                 <Route path="/pets" element={<PetsPage />} />
                 <Route path="/schedule" element={<SchedulePage />} />
                 <Route path="/user" element={<UserPage />} />
