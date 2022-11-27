@@ -10,6 +10,8 @@ import { BottomNavigation } from "./components/BottomNavigation";
 import { SchedulePage } from "./pages/Schedule";
 import { UserPage } from "./pages/User";
 import { AddPetPage } from "./pages/AddPet";
+import { useEffect } from "react";
+import { VaccinesPage } from "./pages/Vaccines";
 
 export const Index = () => {
     const global = useSelector((state: RootState) => state.global);
@@ -19,8 +21,12 @@ export const Index = () => {
             <Routes>
                 <Route path="/" element={<HomePage />} />
                 <Route path="/home" element={<HomePage />} />
-                <Route path="/pets/add" element={<AddPetPage />} />
+
                 <Route path="/pets" element={<PetsPage />} />
+                <Route path="/pets/add" element={<AddPetPage />} />
+
+                <Route path="/vaccines" element={<VaccinesPage />} />
+                
                 <Route path="/schedule" element={<SchedulePage />} />
                 <Route path="/user" element={<UserPage />} />
                 <Route path="/login" element={<LoginPage />} />
