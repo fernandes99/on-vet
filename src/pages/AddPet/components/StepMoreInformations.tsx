@@ -34,7 +34,7 @@ export const StepMoreInformations = () => {
         setTimeout(() => {
             dispatch(addPetUser(addPetData));
             dispatch(setLoading(false));
-            navigate('/pets');
+            navigate(-1);
         }, 3000);
     }
 

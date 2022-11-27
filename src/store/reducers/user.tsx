@@ -17,6 +17,18 @@ const user = createSlice({
     }
 });
 
+const PetMock = {
+    name: 'Mel',
+    type: 'dog',
+    gender: 'female',
+    race: 'Buldog',
+    weight: '4 ~ 6kg',
+    moreInfo: {
+        isAgressive: true,
+        isConvulsed: false        
+    }
+} as AddPetDataType
+
 export interface UserType {
     name: string,
     address: UserAddressType,

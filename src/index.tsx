@@ -10,7 +10,6 @@ import { BottomNavigation } from "./components/BottomNavigation";
 import { SchedulePage } from "./pages/Schedule";
 import { UserPage } from "./pages/User";
 import { AddPetPage } from "./pages/AddPet";
-import { useEffect } from "react";
 import { VaccinesPage } from "./pages/Vaccines";
 
 export const Index = () => {

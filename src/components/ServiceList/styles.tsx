@@ -9,7 +9,7 @@ export const List = styled.View`
     padding-right: 24px;
 `
 
-export const Item = styled.View`
+export const Item = styled.TouchableOpacity`
     width: 200px;
     margin-right: 16px;
     align-items: center;
