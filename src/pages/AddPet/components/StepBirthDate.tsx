@@ -4,7 +4,7 @@ import { PrimaryButton } from "../../../components/PrimaryButton"
 import { Text } from "../../../styles/Text"
 import { Box } from "../styles"
 import { useState } from "react";
-import { FormatDate } from "../../../utils/general";
+import { formatDate } from "../../../utils/general";
 import { useDispatch, } from "react-redux";
 import { setAddPet } from "../../../store/reducers/addPet";
 
@@ -33,7 +33,7 @@ export const StepBirthDate = (props: { setNextStep: (() => void) }) => {
                 onPress={() => setShowDatePicker(true)}
                 mb={'32px'}
             >
-                {birthDate ? ` ${FormatDate(birthDate, "date")}` : "Insire a data aqui"}
+                {birthDate ? ` ${formatDate(birthDate, "date")}` : "Insire a data aqui"}
             </Text>
 
             {showDatePicker &&

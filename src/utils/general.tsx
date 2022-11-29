@@ -1,4 +1,4 @@
-export const FormatDate = (date: Date, type: "date" | "time" | "datetime") => { 
+export const formatDate = (date: Date, type: "date" | "time" | "datetime") => { 
     if (!date) return;
 
     const year = date.getFullYear();
@@ -17,5 +17,13 @@ export const FormatDate = (date: Date, type: "date" | "time" | "datetime") => {
 
     if (type === "datetime") {
         return `${day} de ${mounth} de ${year} as ${hour}h ${minutes}m`
+    }
+}
+
+export const getPetTypeName = (name: string) => {
+    switch (name) {
+        case "dog": return "Cachorro"
+        case "cat": return "Gato"
+        default: return "Pet"
     }
 }

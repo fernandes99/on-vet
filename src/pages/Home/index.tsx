@@ -25,7 +25,7 @@ export const HomePage = () => {
                     <Text
                         category="h2"
                         color="#5F5F66"
-                        mb={"16px"}
+                        mb="16px"
                     >
                         Selecione um serviço
                     </Text>

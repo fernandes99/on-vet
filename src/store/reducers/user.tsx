@@ -1,11 +1,24 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { AddPetDataType } from "./addPet";
+import { AddPetDataType, MoreInfoType, PetType } from "./addPet";
+
+const PetMock = {
+    name: 'Mel',
+    type: 'dog',
+    gender: 'female',
+    race: 'Buldog',
+    weight: '4 ~ 6kg',
+    image: 'https://i.pinimg.com/originals/6c/a5/a7/6ca5a7efff600deda95e0719551e4c0d.jpg',
+    moreInfo: {
+        isAgressive: true,
+        isConvulsed: false
+    }
+} as UserPetType;
 
 const user = createSlice({
     name: 'user',
     initialState: {
         data: {} as UserType,
-        pets: [] as AddPetDataType[]
+        pets: [PetMock] as UserPetType[]
     },
     reducers: {
         setUser (state, action) {
@@ -17,18 +30,16 @@ const user = createSlice({
     }
 });
 
-const PetMock = {
-    name: 'Mel',
-    type: 'dog',
-    gender: 'female',
-    race: 'Buldog',
-    weight: '4 ~ 6kg',
-    moreInfo: {
-        isAgressive: true,
-        isConvulsed: false        
-    }
-} as AddPetDataType
-
+export interface UserPetType {
+    type: PetType,
+    name: string,
+    gender: "male" | "female",
+    race: string,
+    weight: string,
+    birthDate?: Date,
+    image?: string,
+    moreInfo: MoreInfoType,
+}
 export interface UserType {
     name: string,
     address: UserAddressType,

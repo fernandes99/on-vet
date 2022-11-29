@@ -13,7 +13,7 @@ const redirectUri = AuthSession.makeRedirectUri({
 });
 
 export const LoginPage = () => {
-    const discovery = AuthSession.useAutoDiscovery('https://25.73.21.13:44310/');
+    const discovery = AuthSession.useAutoDiscovery(process.env.AUTH_URL || "");
     const [request, result, promptAsync] = AuthSession.useAuthRequest(
         {
           clientId: 'native.code',

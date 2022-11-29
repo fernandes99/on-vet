@@ -11,9 +11,14 @@ import { SchedulePage } from "./pages/Schedule";
 import { UserPage } from "./pages/User";
 import { AddPetPage } from "./pages/AddPet";
 import { VaccinesPage } from "./pages/Vaccines";
+import { useEffect } from "react";
 
 export const Index = () => {
     const global = useSelector((state: RootState) => state.global);
+
+    useEffect(() => {
+        // localStorage.setItem('key', JSON.stringify({ data: 'teste' }));
+    }, [])
 
     return (
         <NativeRouter>
